@@ -10,14 +10,14 @@ export default function Header(props) {
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      <button onClick={() => navigate(props.login ? "/login" : "/signup")}>
-        {props.login ? "Log In" : "Sign In"}
+      <button onClick={() => navigate(props.login ? "/login" : "/signup")}> {/* navigate nos leva a outra pagina */}
+        {props.login ? "Entrar" : "Sign in"}
       </button>
     </StyledHeader>
   );
 }
 const StyledHeader = styled.header`
-  padding: 0 4rem;
+  padding: 0 15rem;
   .logo {
     img {
       height: 5rem;
@@ -31,6 +31,6 @@ const StyledHeader = styled.header`
     color: white;
     border-radius: 0.2rem;
     font-weight: bolder;
-    font-size: 1.05rem;
+    font-size: 1.20rem;
   }
 `;
